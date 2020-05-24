@@ -12,7 +12,7 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
   } else {
-    const notice. = document.getElementsByClassName("notification")[0];
+    const notice = document.getElementsByClassName("notification")[0];
     notice.style.display = "block";
     notice.innerHTML = "Your browser does not support geolocation!";
   }
